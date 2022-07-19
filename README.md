@@ -21,4 +21,7 @@ For this project we will be using the Amazon Bin Image Dataset. The dataset cont
 ### Access
 Since the data is located in a S3 Bucket we used the json file provided to get the directory of images and the download_file methode to download the data. After downloaded the data we uploaded the data into our S3 Bucket.
 
+# Model Training
+
+
 This project will serve as a demonstration of end-to-end machine learning engineering skills that you have learned as a part of this nanodegree.
