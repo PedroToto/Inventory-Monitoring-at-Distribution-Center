@@ -16,6 +16,7 @@ In this section we will present the differents steps for our set up.
 
 ### Overview
 For this project we will be using the Amazon Bin Image Dataset. The dataset contains 500,000 images of bins containing one or more objects. For each image there is a metadata file containing information about the image like the number of objects, it's dimension and the type of object. The bin images in this dataset are captured as robot units carry pods as part of normal Amazon Fulfillment Center operations. However we only use a subset of this dataset which is about 10,436 images distributed into 5 clases.
+![This is an image](https://github.com/PedroToto/Inventory-Monitoring-at-Distribution-Center/blob/main/image/data_distribution.png)
 
 ### Access
 Since the data is located in a S3 Bucket we used the json file provided to get the directory of images and the download_file methode to download the data. After downloaded the data we uploaded the data into our S3 Bucket.
