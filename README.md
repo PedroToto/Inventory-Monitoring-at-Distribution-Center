@@ -27,10 +27,12 @@ For the training step we used different model. We used the resnet101 to train ou
 
 # Machine Learning Pipeline
 Our solution implements an Machine learning pipeline containing the following steps:
-1. Data ingestion: In this step we retrieve the dataset split the data into train, test and validation and then upload the data to a S3 Bucket.
-2. Model training script: In this step we writed a script in what we defined some functions to process the data, initialized a pretrained model, trained and tested our model.
-3. Train in Sagemaker: In this step, we set up a training estimator and used the model training script to perform model profiling and debugging.
-4. predictive performance using test and validation data subsets until a model solves the business problem efficiently.
-5. Model Deployment: Once the model evaluation is complete, the pipeline selects the best model and deploys it.
+1. **Data ingestion**: In this step we retrieve the dataset split the data into train, test and validation and then upload the data to a S3 Bucket.
+2. **Model training script**: In this step we writed a script in what we defined some functions to process the data, initialized a pretrained model, train and test our model.
+3. **Train in Sagemaker**: To train our model, we created a submission script so that we can submit a training job to an instance using a Jupyter Notebook. In the Jupyter Notebook we set up a training estimator and used the model training script to perform model profiling and debugging.
 
+# Standout Suggestions
+
+5. predictive performance using test and validation data subsets until a model solves the business problem efficiently.
+6. Model Deployment: Once the model evaluation is complete, the pipeline selects the best model and deploys it.
 This project will serve as a demonstration of end-to-end machine learning engineering skills that you have learned as a part of this nanodegree.
