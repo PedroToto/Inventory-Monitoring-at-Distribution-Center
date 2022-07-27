@@ -33,6 +33,22 @@ Our solution implements an Machine learning pipeline containing the following st
 
 # Standout Suggestions
 
+### Model Deployment
+To deploy our model, we created a Pytorch model object and then call the deploy method from the Pytorch model object with the instance type with the parameter `instance_type` and the number of instances with the oarameter `initial_instance_count`.
+
+### Hyperparameter Tuning
+For this experimentation i used the resnet101 pretrained model with three hyperparameters.
+
+| Hyperparameter | Range |
+| -------------- | ----- |
+| Learning rate  | (0.001, 0.1) |
+| Batch Size     | [8, 16, 32, 64] |
+| Epochs         | (2, 10) |
+
+After the training jobs here is the results.
+
+
+
 5. predictive performance using test and validation data subsets until a model solves the business problem efficiently.
 6. Model Deployment: Once the model evaluation is complete, the pipeline selects the best model and deploys it.
 This project will serve as a demonstration of end-to-end machine learning engineering skills that you have learned as a part of this nanodegree.
