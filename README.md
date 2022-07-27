@@ -34,7 +34,7 @@ Our solution implements an Machine learning pipeline containing the following st
 # Standout Suggestions
 
 ### Model Deployment
-To deploy our model, we created a Pytorch model object and then call the deploy method from the Pytorch model object with the instance type with the parameter `instance_type` and the number of instances with the oarameter `initial_instance_count`.
+To deploy our model, we created a Pytorch model object and then call the deploy method from the PyTorch model object with the instance type with the parameter `instance_type` and the number of instances with the oarameter `initial_instance_count`.
 
 ### Hyperparameter Tuning
 For this experimentation i used the resnet101 pretrained model with three hyperparameters.
@@ -46,9 +46,14 @@ For this experimentation i used the resnet101 pretrained model with three hyperp
 | Epochs         | (2, 10) |
 
 After the training jobs here is the results.
+![This is an image](https://github.com/PedroToto/Inventory-Monitoring-at-Distribution-Center/blob/main/image/hyperparameter_tuning.png)
+
+![This is an image](https://github.com/PedroToto/Inventory-Monitoring-at-Distribution-Center/blob/main/image/best_model.png)
+
+### Reduce Costs
+To perform a cost analysis of the system, I create a Policy that allows access to the Cost Explorer API, attached this policy to the sagemaker role and used the Cost Explorer API to programmatically query your cost and usage data. To reduce the i used a spot instance by enable the `use_spot_instances` constructor arg in the PyToch model and set the `max_wait` constructor arg which is representing the amount of time we are willing to wait for Spot infrastructure to become available. 
+
+### Multi-Instance Training
+To perform the Multi-Instance training, we update the `instance_count` arg in the PyTorch nodel to three (3).
 
 
-
-5. predictive performance using test and validation data subsets until a model solves the business problem efficiently.
-6. Model Deployment: Once the model evaluation is complete, the pipeline selects the best model and deploys it.
-This project will serve as a demonstration of end-to-end machine learning engineering skills that you have learned as a part of this nanodegree.
