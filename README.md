@@ -36,6 +36,8 @@ Our solution implements an Machine learning pipeline containing the following st
 ### Model Deployment
 To deploy our model, we created a Pytorch model object and then call the deploy method from the PyTorch model object with the instance type with the parameter `instance_type` and the number of instances with the oarameter `initial_instance_count`.
 
+![This is an image](https://github.com/PedroToto/Inventory-Monitoring-at-Distribution-Center/blob/main/image/endpoint.png)
+
 ### Hyperparameter Tuning
 For this experimentation i used the resnet101 pretrained model with three hyperparameters.
 
@@ -56,4 +58,4 @@ To perform a cost analysis of the system, I create a Policy that allows access t
 ### Multi-Instance Training
 To perform the Multi-Instance training, we update the `instance_count` arg in the PyTorch nodel to three (3).
 
-
+![This is an image](https://github.com/PedroToto/Inventory-Monitoring-at-Distribution-Center/blob/main/image/instance_count.png)
