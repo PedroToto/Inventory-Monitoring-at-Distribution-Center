@@ -23,7 +23,7 @@ For this project we have used the Amazon Bin Image Dataset. The dataset contains
 Since the data is located in a S3 Bucket we used the json file provided to get the directory of images and the download_file methode to download the data. After downloaded the data we uploaded the data into our S3 Bucket.
 
 # Model Training
-For the training step we used different model. We used the resnet101 to train our model using the Adam optimizer with a learning_rate = 0.001 and a batch-size of 32. For our second training we used a model that we have created using the SGD optimizer and a learning_rate = 0.001.
+For the training step we used different model. We used the resnet101 to train our model using the Adam optimizer with a learning_rate = 0.001 and a batch-size of 32. For our second training we used a model that we have created using the Adam optimizer and a learning_rate = 0.001.
 
 # Machine Learning Pipeline
 Our solution implements an Machine learning pipeline containing the following steps:
